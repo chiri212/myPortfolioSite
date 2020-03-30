@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ポートフォリオサイト</title>
+  <style>
+  body{
+    width:95%;
+    max-width:980px;
+    margin: 0 auto;
+  }
+
+  li{
+    list-style: none;
+    margin-left: -40px;
+  }
+  p{
+    margin:5px 0;
+  }
+
+  header{
+     width:100%;
+     height:100px;
+     line-height:150%;
+     overflow:hidden;
+     position:relative;
+
+  }
+  header p{
+    width:100%;
+    color:red;
+    text-align:right;
+    position:absolute;
+    top:10px;
+  }
+
+  h1{
+    float:left;
+    line-height:200%;
+    margin:0;
+    position:absolute;
+    top:30px;
+  }
+
+  h2{
+    border-bottom:2px solid #aaa;
+    margin:10px 0;
+  }
+
+  h3{
+    margin:20px 0 5px 0;
+  }
+
+  ul{
+    margin:0;
+  }
+
+  td,th{
+    padding:3px 8px;
+  }
+
+  th{
+    text-align: center;
+  }
+
+  td{
+    text-align: left;
+  }
+
+  .movie-box{
+    max-width:250px;
+  }
+  
+  .bg-gray{
+      background:#e3e3e3;
+  }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ポートフォリオサイト</h1>
+    <p>更新：2020年3月27日</p>
+  </header>
+  <div>
+    <h2>0.本サイトの目的</h2>
+      <ul>
+        <li>学習のアウトプットとして制作したものを概要とともに公開すること</li>
+        <li>学習記録を残すことで、学習の進捗を管理すること</li>
+      </ul>
+  </div><br>
+
+  <div class="profile">
+    <h2>1.プロフィール</h2>
+    <h3>■基本情報</h3>
+    年齢：28歳（1992年生まれ）<br>
+    性別：男性<br>
+    出身：千葉県<br>
+    <h3>■プログラミングについて</h3>
+    2019年8月より学習開始。フロントエンドエンジニアとしての転職とキャリアアップを目指し、<br>HTML・CSS・JavaScript・phpを中心に、オンライン教材や書籍を用いて学習中。
+  </div><br>
+
+  <div>
+    <h2>2.制作実績　※青字タイトルより公開ページにアクセス可能です</h2>
+
+      <h3>[1] <a href="https://ritaworks.online/trump/start.php" target="_blank">神経衰弱</a></h3>
+      <table border="1" style="border-collapse:collapse">
+        <tr><td class="bg-gray">公開日</td><td>2019/9/22</td></tr>
+        <tr><td  class="bg-gray" style="width:15%;min-width:65px;">使用言語</td><td>html、css、JavaScript、php</td></tr>
+        <tr><td class="bg-gray">制作時間</td><td>約24時間</td></tr>
+        <tr><td class="bg-gray">備考</td><td>学習したプログラミング言語によって動作するプログラムを作成するため、トランプゲームの神経衰弱を再現しました。JavaScriptにてカードのランダム配置・選択したカードの一致判定やプレイヤー人数に応じた動作変更の設定を行い、cssおよびjQueryを用いてアニメーションを実装しました。</td></tr>
+        <tr><td class="bg-gray">サンプル動画</td><td><video src="portfolio_movie/trump_sample.m4v" controls poster="portfolio_movie/trump_sample.png" preload="none" class="movie-box"></video></td></tr>
+      </table>
+
+      <h3>[2] <a href="https://ritaworks.online/jsnake/jsnake.html" target="_blank">JSnake</a></h3>
+      <table border="1" style="border-collapse:collapse">
+        <tr><td class="bg-gray">公開日</td><td>2019/10/2</td></tr>
+        <tr><td  class="bg-gray" style="width:15%;min-width:65px;">使用言語</td><td>html、css、JavaScript</td></tr>
+        <tr><td class="bg-gray">制作時間</td><td>約18時間</td></tr>
+        <tr><td class="bg-gray">備考</td><td>JavaScriptの言語理解を深めるため、ヘビが上下左右に動くゲームを再現しました。JavaScriptで動くヘビ(snake)のため、「JSnake」とネーミングしています。レスポンシブ対応済。</td></tr>
+        <tr><td class="bg-gray">サンプル動画</td><td><video src="portfolio_movie/jsnake_sample.m4v" controls poster="portfolio_movie/jsnake_sample.png" preload="none" class="movie-box"></video></td></tr>
+      </table>
+
+      <h3>[3] <a href="https://ritaworks.online/matchkara/index.php" target="_blank">マチカラ</a></h3>
+      <table border="1" style="border-collapse:collapse">
+        <tr><td class="bg-gray">公開日</td><td>2019/11/10</td></tr>
+        <tr><td  class="bg-gray" style="width:15%;min-width:65px;">使用言語</td><td>html、css、JavaScript、php、MySQL</td></tr>
+        <tr><td class="bg-gray">制作時間</td><td>約90時間</td></tr>
+        <tr><td class="bg-gray">備考</td><td>趣味であるカラオケを題材とし、相席のマッチングサービスを制作。フレームワークは使用せず、PHPフルスクラッチで機能を実装しました。<br>実装した主な機能：新規ユーザー登録・ログイン機能、プロフィール編集（画像アップロード含む）、コンテンツ登録、コンテンツ一覧表示および日付・フリーワード検索等による絞り込み、連絡掲示板、1対1メッセージ、ユーザーフォロー機能、パスワード再発行機能 ほか</td></tr>
+        <tr><td class="bg-gray">サンプル動画</td><td><video src="portfolio_movie/matchkara_sample.m4v" controls poster="portfolio_movie/matchkara_sample.png" preload="none" class="movie-box"></video></td></tr>
+      </table>
+
+      <h3>[4] <a href="https://ritaworks.online/nomimon/nomimon.php" target="_blank">NOMIMON</a></h3>
+      <table border="1" style="border-collapse:collapse">
+        <tr><td class="bg-gray">公開日</td><td>2019/11/20</td></tr>
+        <tr><td  class="bg-gray" style="width:15%;min-width:65px;">使用言語</td><td>html、css、JavaScript、php</td></tr>
+        <tr><td class="bg-gray">制作時間</td><td>約24時間</td></tr>
+        <tr><td class="bg-gray">備考</td><td>ポ◯モン風の画面でお酒を飲み進めるゲームを作成しました。ランダムで表示されるお酒を飲むと、そのアルコール度数に応じてプレイヤーのHPが減り、HPが0になるとゲームオーバー（酔いつぶれる）になるゲームです。phpのクラスを用いたオブジェクト指向で作成しています。</td></tr>
+        <tr><td class="bg-gray">サンプル動画</td><td><video src="portfolio_movie/nomimon_sample.m4v" controls poster="portfolio_movie/nomimon_sample.png" preload="none" class="movie-box"></video></td></tr>
+      </table>
+    <br>
+      <h3>[5] 友人に向けた結婚サプライズWEBサイト（未公開）</a></h3>
+      <table border="1" style="border-collapse:collapse">
+        <tr><td class="bg-gray">作成日</td><td>2019/12/21</td></tr>
+        <tr><td  class="bg-gray" style="width:15%;min-width:65px;">使用言語</td><td>html、css、JavaScript</td></tr>
+        <tr><td class="bg-gray">制作時間</td><td>約30時間</td></tr>
+        <tr><td class="bg-gray">備考</td><td>大学時代の友人へ、結婚祝のサプライズとしてWEBサイトを制作しました。スマホ向けのWEBサイトとして制作し、学生時代の画像を入れ込んだ自動スライドショーや、友人数人で制作したムービー等を埋め込んでいます。<br>画面数：12P、ファイル数：13ファイル</td></tr>
+        <tr><td class="bg-gray">サンプル動画</td><td>-</td></tr>
+      </table>
+    <br>
+      <h3>[6] 業務システム（未公開）</a></h3>
+      <table border="1" style="border-collapse:collapse">
+        <tr><td class="bg-gray">作成日</td><td>2020/3/26</td></tr>
+        <tr><td  class="bg-gray" style="width:15%;min-width:65px;">使用言語</td><td>html、css、JavaScript、php、MySQL</td></tr>
+        <tr><td class="bg-gray">制作時間</td><td>約200時間</td></tr>
+        <tr><td class="bg-gray">備考</td><td>個人で制作業務を受託し、業務用の簡易WEBシステムを制作しました。要件定義〜実装・テストを一貫して行い、25ページの初期設定／操作用マニュアルと併せて納品しました。<br>※画面数：20P、ファイル数：49ファイル</td></tr>
+        <tr><td class="bg-gray">サンプル動画</td><td>-</td></tr>
+      </table>
+      <br>
+
+  </div>
+  </body>
+  </html>
